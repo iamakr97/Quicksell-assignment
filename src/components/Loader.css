@@ -1,0 +1,25 @@
+/* src/components/Loader.css */
+.loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full height of the viewport */
+    background-color: #f0f0f0; /* Background color for contrast */
+    font-family: Arial, sans-serif; /* Font family */
+  }
+  
+  .blow-text {
+    font-size: 48px; /* Text size */
+    color: #3498db; /* Text color */
+    animation: blow 1.5s ease-in-out infinite; /* Blowing effect */
+  }
+  
+  @keyframes blow {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5); /* Scale up */
+    }
+  }
+  

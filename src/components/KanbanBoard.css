@@ -1,0 +1,118 @@
+.kanban-header-container {
+    background-color: white;
+    padding: 2px 0;
+}
+
+.kanban-container {
+    background-color: rgb(243, 243, 243);
+    min-height: 100vh;
+}
+
+.display-dropdown {
+    background-color: white;
+    max-width: 95%;
+    margin: 12px auto;
+}
+
+.display-btn {
+    background-color: white;
+    border: 1px solid rgba(195, 195, 195, 0.5);
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 2px 4px;
+    gap: 2px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 5px 18px;
+}
+
+.display-popup {
+    position: absolute;
+    border: 1px solid rgba(176, 176, 176, 0.5);
+    top: 42px;
+    left: 2%;
+    background-color: white;
+    padding: 8px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 8px;
+    z-index: 100;
+}
+
+.popup-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    padding: 4px 12px;
+}
+
+.popup-item label {
+    color: rgb(115, 115, 115);
+}
+
+.popup-item select {
+    padding: 2px 18px;
+    border-radius: 5px;
+}
+
+.card-container {
+    background-color: rgb(237, 237, 237);
+    min-height: calc(100vh - 42px);
+    border: 2px solid black;
+}
+
+.kanban-groups {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 95%;
+    margin: 1rem auto;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.user-avatar {
+    height: 18px;
+    border-radius: 50%;
+}
+
+.filter-group-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    margin: 8px 0;
+}
+
+.filter-group-div {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 4px;
+}
+
+.filter-group-div p {
+    font-size: 14px;
+    color: black;
+    font-weight: 550;
+}
+
+.filter-group-div img {
+    height: 14px;
+}
+
+.filter-group-img {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.filter-group-img img {
+    height: 16px;
+}
+
+.filter-group-div p span {
+    margin-left: 14px;
+    font-weight: 400;
+}
