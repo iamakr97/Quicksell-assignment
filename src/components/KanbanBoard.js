@@ -23,8 +23,10 @@ import threeDotSvg from '../assets/icons_FEtask/3 dot menu.svg';
 
 
 function KanbanBoard({ tickets, users }) {
-    const [grouping, setGrouping] = useState("status");
-    const [ordering, setOrdering] = useState("title");
+    const group = localStorage.getItem('group') || "status";
+    const order = localStorage.getItem('order') || "title";
+    const [grouping, setGrouping] = useState(group);
+    const [ordering, setOrdering] = useState(order);
     const [display, setDisplay] = useState(false);
 
     const displayBtnHandler = () => {
@@ -33,11 +35,13 @@ function KanbanBoard({ tickets, users }) {
 
     const handleGrouping = (e) => {
         setGrouping(e.target.value);
+        localStorage.setItem('group', e.target.value);
         setDisplay(!display);
     };
 
     const handleOrdering = (e) => {
         setOrdering(e.target.value);
+        localStorage.setItem('order', e.target.value);
         setDisplay(!display);
     };
 

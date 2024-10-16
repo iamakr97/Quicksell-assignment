@@ -2,8 +2,8 @@
 import { useEffect, useState } from 'react';
 import './App.css';
 import axios from 'axios';
-import Loader from './components/Loader';
 import KanbanBoard from './components/KanbanBoard';
+import SkeletonLoading from './components/SkeletonLoading';
 
 function App() {
   const [tickets, setTickets] = useState([]);
@@ -31,7 +31,7 @@ function App() {
     <div className="App">
       {loading
         ?
-        <Loader />
+        <SkeletonLoading/>
         :
         <KanbanBoard tickets={tickets} users={users} />
       }

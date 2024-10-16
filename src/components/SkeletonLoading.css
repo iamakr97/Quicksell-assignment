@@ -1,0 +1,57 @@
+.skeleton-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 250px);
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.skeleton-card {
+  width: 250px;
+  height: 150px;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.skeleton-id,
+.skeleton-title,
+.skeleton-tag {
+  background-color: #e0e0e0;
+  border-radius: 4px;
+}
+
+.skeleton-id {
+  width: 30%;
+  height: 15px;
+}
+
+.skeleton-title {
+  width: 60%;
+  height: 20px;
+}
+
+.skeleton-tag {
+  width: 40%;
+  height: 10px;
+}
+
+.skeleton-card>div {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+
+  100% {
+    background-position: -200% 0;
+  }
+}
